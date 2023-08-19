@@ -1,0 +1,28 @@
+/* Exemplo de personalização */
+.intro {
+  position: absolute;
+  text-align: center;
+  background-color: rgb(0 0 0 / 20%);
+  color: white;
+  padding: 10px;
+}
+.profile-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-me{
+  margin-top: 3%;
+}
+
+.container-fluid{
+  margin-top: 2%;
+}

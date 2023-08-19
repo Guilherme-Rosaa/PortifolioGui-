@@ -1,0 +1,89 @@
+<!-- <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-right">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<div class="profile-image">
+  <img src="assets/fotoJu.jpeg" alt="Sua Foto">
+  <div class="intro">
+    <h1>Olá, eu sou o Guilherme</h1>
+    <p class="lead">Um Desenvolvedor Junior apaixonado por front-end, e este é meu portifólio!</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="about-me">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Meu nome é Guilherme e tenho 23 anos. Sou um entusiasta de desenvolvimento front-end apaixonado por criar experiências incríveis na web. Atualmente, moro em uma cidade ensolarada chamada Webville.</p>
+
+    <p>Minha jornada no mundo da programação começou durante meu tempo na faculdade, onde me formei em Ciência da Computação. Desde então, tenho me dedicado a aprimorar minhas habilidades em diversas áreas de tecnologia.</p>
+
+    <p>Com experiência em HTML, CSS e JavaScript, gosto de transformar designs em interfaces elegantes e interativas. Também sou um grande fã do Angular, e tenho trabalhado em vários projetos que exploram suas capacidades.</p>
+
+    <p>Quando não estou codificando, você pode me encontrar praticando fotografia, explorando trilhas na natureza ou desfrutando de um bom livro de ficção científica. Acredito que a criatividade e a curiosidade são essenciais em qualquer empreendimento.</p>
+
+    <p>Um dos meus projetos mais recentes foi a criação de um aplicativo de lista de tarefas interativo usando Angular. Além disso, estou constantemente aprendendo novas tecnologias e explorando maneiras de melhorar minhas habilidades.</p>
+
+    <p>Meu objetivo é crescer como desenvolvedor, contribuir para projetos inovadores e, eventualmente, me tornar um especialista em UX/UI. Estou sempre aberto a novas oportunidades e desafios que me permitam expandir meus horizontes.</p>
+
+    <p>Sinta-se à vontade para entrar em contato comigo através do meu e-mail (guilherme.dev@example.com) ou me seguir no Twitter (@guilherme_dev) para acompanhar minhas aventuras no mundo da programação.</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <h2>Meus projetos</h2>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+      The current link item
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+  </div>
+</div>
+
+
+<!-- Seu template HTML (contact.component.html) -->
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Entre em Contato</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" formControlName="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" formControlName="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="message" formControlName="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
