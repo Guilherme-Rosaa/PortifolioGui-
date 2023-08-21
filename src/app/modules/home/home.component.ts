@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { EmailService } from 'src/app/services/email.service';
+import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-home',
