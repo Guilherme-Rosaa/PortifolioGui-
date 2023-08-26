@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,7 @@ import { EmailService } from '../../services/email.service';
 export class HomeComponent {
   contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private emailService: EmailService) {
+  constructor(private fb: FormBuilder, private emailService: EmailService,private modalService: NgbModal) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -37,4 +39,9 @@ export class HomeComponent {
       );
     }
   }
+
+  openModal(content: any) {
+    this.modalService.open(content, { centered: true });
+  }
+
 }

@@ -1,3 +1,9 @@
+<app-navbar></app-navbar>
+<br><br>
+<button (click)="openModal(myModalContent)">Abrir Modal</button>
+<ng-template #myModalContent>
+  <!-- Conteúdo do modal aqui -->
+</ng-template>
 <!-- <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -20,7 +26,14 @@
   </div>
 </nav> -->
 
-<div style="position: fixed;
+<div class="profile-image">
+  <img style="max-width: 100%;object-fit: contain;" src="assets/fotoJu.jpeg" alt="Sua Foto">
+  <div class="intro">
+    <h1>Olá, Tudo bem Ju ?</h1>
+    <p class="lead">Um Desenvolvedor Junior apaixonado por front-end, e este é meu portifólio!</p>
+  </div>
+</div>
+<!-- <div style="position: fixed;
 top: 0;
 left: 0;
 width: 100%;
@@ -32,16 +45,13 @@ align-items: center;">
   <img style="max-width: 100%;object-fit: contain;" src="assets/fotoJu.jpeg" alt="Sua Foto">
   <div class="intro">
     <h1>Olá, Tudo bem Ju ?</h1>
-    <!-- <p class="lead">Um Desenvolvedor Junior apaixonado por front-end, e este é meu portifólio!</p> -->
+    <p class="lead">Um Desenvolvedor Junior apaixonado por front-end, e este é meu portifólio!</p>
   </div>
-</div>
+</div> -->
 
-<!-- <div class="container-fluid">
-  <div class="about-me">
-    <h2>Oi JU</h2>
-
-
-  </div>
+<div class="container-fluid">
+  <h2>Sobre mim</h2>
+  <p></p>
 </div>
 
 <div class="container-fluid">
@@ -58,8 +68,7 @@ align-items: center;">
 </div>
 
 
-<!-- Seu template HTML (contact.component.html)
-<div class="container">
+<div class="container-fluid">
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">Entre em Contato</h2>
@@ -81,6 +90,3 @@ align-items: center;">
     </div>
   </div>
 </div>
-
-
- -->
