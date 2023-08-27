@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
-//import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class HomeComponent {
+export class ContactComponent {
   contactForm: FormGroup;
 
   constructor(private fb: FormBuilder, private emailService: EmailService) {
@@ -39,5 +37,4 @@ export class HomeComponent {
       );
     }
   }
-
 }

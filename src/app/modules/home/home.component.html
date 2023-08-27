@@ -1,9 +1,5 @@
 <app-navbar></app-navbar>
 <br><br>
-<button (click)="openModal(myModalContent)">Abrir Modal</button>
-<ng-template #myModalContent>
-  <!-- Conteúdo do modal aqui -->
-</ng-template>
 <!-- <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -29,7 +25,7 @@
 <div class="profile-image">
   <img style="max-width: 100%;object-fit: contain;" src="assets/fotoJu.jpeg" alt="Sua Foto">
   <div class="intro">
-    <h1>Olá, Tudo bem Ju ?</h1>
+    <h1>Olá, sou o Guilherme Rosa</h1>
     <p class="lead">Um Desenvolvedor Junior apaixonado por front-end, e este é meu portifólio!</p>
   </div>
 </div>
@@ -54,39 +50,7 @@ align-items: center;">
   <p></p>
 </div>
 
-<div class="container-fluid">
-  <h2>Meus projetos</h2>
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-      The current link item
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
-  </div>
-</div>
 
 
-<div class="container-fluid">
-  <div class="card">
-    <div class="card-body">
-      <h2 class="card-title">Entre em Contato</h2>
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="mb-3">
-          <label for="name" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="name" formControlName="name">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" formControlName="email">
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="message" formControlName="message" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
-  </div>
-</div>
+
+

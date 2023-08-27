@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Entre em Contato</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" formControlName="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" formControlName="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="message" formControlName="message" rows="4"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Redes Sociais:</label>
+          <div>
+            <a href="URL_DO_SEU_LINKEDIN" target="_blank" rel="noopener noreferrer" class="me-3">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="URL_DO_SEU_INSTAGRAM" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
