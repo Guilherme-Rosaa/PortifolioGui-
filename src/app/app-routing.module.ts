@@ -6,18 +6,14 @@ import { ProjectComponent } from './modules/project/project.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'home', pathMatch: 'full'
+  path: '', component: HomeComponent
   },
   {
-  path: 'home', component: HomeComponent
+  path: 'contato', component: ContactComponent
   },
   {
-  path: 'contact', component: ContactComponent
+  path: 'projetos', component: ProjectComponent
   },
-  {
-  path: 'project', component: ProjectComponent
-  },
-
 
 ];
 

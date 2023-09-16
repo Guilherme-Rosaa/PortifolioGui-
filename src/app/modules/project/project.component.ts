@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent {
-
+  isItem1Expanded = false;
+  isItem2Expanded = false;
 }

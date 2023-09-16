@@ -11,7 +11,10 @@ import { TesteComponent } from './modules/teste/teste.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { ProjectComponent } from './modules/project/project.component';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -21,9 +24,9 @@ import { ProjectComponent } from './modules/project/project.component';
     TesteComponent,
     NavbarComponent,
     ContactComponent,
-    ProjectComponent
+    ProjectComponent,
   ],
-  imports: [BrowserModule,AppRoutingModule,ReactiveFormsModule],
+  imports: [BrowserModule,AppRoutingModule,ReactiveFormsModule,BrowserAnimationsModule,ToastrModule.forRoot(),NgbCollapseModule],
   providers: [],
   bootstrap: [AppComponent]
 })

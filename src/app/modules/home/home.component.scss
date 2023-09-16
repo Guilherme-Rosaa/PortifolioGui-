@@ -26,3 +26,10 @@
 .container-fluid{
   margin-top: 2%;
 }
+
+
+@media (max-width: 850px) {
+  .container {
+    width: 80%;
+  }
+}
