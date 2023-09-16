@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 export class ContactComponent {
   contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private emailService: EmailService,private toastr: ToastrService) {
+  constructor(private fb: FormBuilder, private emailService: EmailService) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -29,11 +28,8 @@ export class ContactComponent {
 
       this.emailService.sendEmail(data).then(
         () => {
-        this.toastr.success("Obrigado por enviar sua mensagem.", "E-mail enviado com sucesso!")
-        this.toastr.error("Obrigado por enviar sua mensagem.", "E-mail enviado com sucesso!")
-        this.toastr.warning("Obrigado por enviar sua mensagem.", "E-mail enviado com sucesso!")
-        this.toastr.show("Obrigado por enviar sua mensagem.", "E-mail enviado com sucesso!")
-        this.toastr.info("Obrigado por enviar sua mensagem.", "E-mail enviado com sucesso!")
+          window.alert("E-mail enviado com sucesso, obrigado!");
+
         this.contactForm.reset();
         },
         (error: any) => {

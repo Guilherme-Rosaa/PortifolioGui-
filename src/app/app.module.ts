@@ -11,7 +11,6 @@ import { TesteComponent } from './modules/teste/teste.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { ProjectComponent } from './modules/project/project.component';
-import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -26,7 +25,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
     ContactComponent,
     ProjectComponent,
   ],
-  imports: [BrowserModule,AppRoutingModule,ReactiveFormsModule,BrowserAnimationsModule,ToastrModule.forRoot(),NgbCollapseModule],
+  imports: [BrowserModule,AppRoutingModule,ReactiveFormsModule,BrowserAnimationsModule,NgbCollapseModule],
   providers: [],
   bootstrap: [AppComponent]
 })
