@@ -9,10 +9,10 @@ const routes: Routes = [
   path: '', component: HomeComponent
   },
   {
-  path: 'portifolioGuilherme/contato', component: ContactComponent
+  path: 'contato', component: ContactComponent
   },
   {
-  path: 'portifolioGuilherme/projetos', component: ProjectComponent
+  path: 'projetos', component: ProjectComponent
   },
 
 ];
