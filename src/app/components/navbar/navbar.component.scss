@@ -1,5 +1,7 @@
 nav{
-  background-color: #7E5BEF !important;
+  //background-color#7e5befEF !important;
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  background: rgb(255 255 255 / 19%) !important;
 }
 
 button{
@@ -7,4 +9,21 @@ button{
 }
 a{
   color: aliceblue;
+}
+
+.navbar-brand{
+  margin-left: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .nav-link {
+    margin-left: 1rem;
+  }
+  i{
+    margin-right: 0.3rem;
+  }
+}
+
+.navbar-toggler{
+  margin-right: 1rem;
 }

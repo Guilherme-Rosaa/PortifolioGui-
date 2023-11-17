@@ -1,22 +1,35 @@
+<app-particle-container></app-particle-container>
+
 <app-navbar></app-navbar>
 <br>
 <div class="container-fluid">
   <h2>Meus projetos</h2>
-  <h3>Ainda não tem nada para ver aqui</h3>
-  <!-- <div class="list-group">
-    <div class="list-group-item list-group-item-action" (click)="isItem1Expanded = !isItem1Expanded">
-      A second item
-      <i [class]="isItem1Expanded ? 'fas fa-caret-up' : 'fas fa-caret-down'"></i>
+  <div class="list-group">
+    <div (click)="projeto.expandido = !projeto.expandido" class="list-group-item list-group-item-action"
+      *ngFor="let projeto of projetos">
+      <div class="d-flex">
+        <div>
+          <img [src]="projeto.Imagem" alt="Imagem do Projeto" class="mr-3">
+        </div>
+        <div class="flex-fill d-flex justify-content-between align-items-center">
+          {{ projeto.Nome }}
+          <i [class]="projeto.expandido ? 'fas fa-caret-up' : 'fas fa-caret-down'"></i>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between;margin-top: 2rem;" *ngIf="projeto.expandido">
+        <div style="width: 75%;">
+          <p>{{ projeto.Descricao }}</p>
+        </div>
+        <div style="align-items: center;
+        display: flex;width: 20%;">
+          <a style="width: 80%; margin-left: 2rem;" [href]="projeto.Url" target="_blank" class="btn btn-primary" (click)="stopPropagation($event)">
+            Ver Código Fonte <i style="margin-left: 0.5rem;" class="fas fa-code"></i>
+        </a>
+        </div>
+
+
+
+      </div>
     </div>
-    <div *ngIf="isItem1Expanded" class="list-group-item">Dropdown Item 1</div>
-    <div *ngIf="isItem1Expanded" class="list-group-item">Dropdown Item 2</div>
-    <div *ngIf="isItem1Expanded" class="list-group-item">Dropdown Item 3</div>
-    <div class="list-group-item list-group-item-action" (click)="isItem2Expanded = !isItem2Expanded">
-      A third item
-      <i [class]="isItem2Expanded ? 'fas fa-caret-up' : 'fas fa-caret-down'"></i>
-    </div>
-    <div *ngIf="isItem2Expanded" class="list-group-item">Dropdown Item 4</div>
-    <div *ngIf="isItem2Expanded" class="list-group-item">Dropdown Item 5</div>
-    <div class="list-group-item list-group-item-action">A fourth item</div>
-  </div> -->
+  </div>
 </div>

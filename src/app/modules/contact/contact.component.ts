@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
 
@@ -7,10 +7,14 @@ import { EmailService } from '../../services/email.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit{
   contactForm: FormGroup;
+ngOnInit(): void {
+  this.renderer.setStyle(document.body, 'overflow', 'hidden');
+}
 
-  constructor(private fb: FormBuilder, private emailService: EmailService) {
+
+  constructor(private fb: FormBuilder, private emailService: EmailService, private renderer: Renderer2) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],

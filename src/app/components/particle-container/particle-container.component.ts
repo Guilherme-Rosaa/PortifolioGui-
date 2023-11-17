@@ -1,19 +1,15 @@
-import { Component, OnInit,Renderer2  } from '@angular/core';
-
+import { Component } from '@angular/core';
 // Declaração para evitar erros de TypeScript
 declare var particlesJS: any;
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-particle-container',
+  templateUrl: './particle-container.component.html',
+  styleUrls: ['./particle-container.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ParticleContainerComponent {
 
-  constructor(private renderer: Renderer2){}
 
   ngOnInit() {
-    this.renderer.setStyle(document.body, 'overflow', 'hidden');
     // Verifique se o DOM está pronto antes de carregar o Particle.js
     document.addEventListener('DOMContentLoaded', () => {
       this.initializeParticles();
@@ -96,11 +92,11 @@ export class HomeComponent implements OnInit {
           "detect_on": "canvas",
           "events": {
             "onhover": {
-              "enable": false,
+              "enable": true,
               "mode": "bubble"
             },
             "onclick": {
-              "enable": false,
+              "enable": true,
               "mode": "repulse"
             },
             "resize": true

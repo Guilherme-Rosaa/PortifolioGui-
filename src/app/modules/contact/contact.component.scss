@@ -53,3 +53,37 @@ button {
   color: #fff; /* Cor do texto personalizada */
   border-radius: 8px; /* Borda arredondada */
 }
+
+.card{
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  background: rgb(255 255 255 / 10%);
+  color:white;
+}
+
+input{
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  background: rgb(255 255 255 / 10%);
+  color:white;
+}
+
+textarea{
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  background: rgb(255 255 255 / 10%);
+  color:white;
+}
+
+ #name:focus{
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  background: rgb(255 255 255 / 10%);
+  color:white;
+ }
+ #email:focus{
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  background: rgb(255 255 255 / 10%);
+  color:white;
+ }
+ #message:focus{
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  background: rgb(255 255 255 / 10%);
+  color:white;
+ }
