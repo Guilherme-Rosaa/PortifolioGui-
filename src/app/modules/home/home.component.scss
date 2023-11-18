@@ -1,4 +1,4 @@
-/* Exemplo de personalização */
+
 .intro {
   position: absolute;
   text-align: center;
@@ -37,7 +37,7 @@
 
 body{
   margin: 0;
-  overflow: hidden; /* Impede a rolagem da página */
+  overflow: hidden;
 
 }
 canvas{
@@ -48,27 +48,24 @@ canvas{
   width: 100%;
   height: 100%;
   background-color: #000000;
-  //background-image: url("https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 100%;
 }
-/* Image by Patrick Fore on Unsplash */
 
 
-/* home.component.scss */
 .card-container1 {
   position: absolute;
   top: 25%;
   left: 25%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 600px; /* Ajuste conforme necessário */
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
-  background: rgb(255 255 255 / 10%); /* Adiciona um fundo semitransparente */
-  border-radius: 10px; /* Borda arredondada do card */
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  background: rgb(255 255 255 / 10%);
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card-container2 {
   position: absolute;
@@ -76,12 +73,12 @@ canvas{
   left: 75%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 600px; /* Ajuste conforme necessário */
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
-  background: rgb(255 255 255 / 10%); /* Adiciona um fundo semitransparente */
-  border-radius: 10px; /* Borda arredondada do card */
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  background: rgb(255 255 255 / 10%);
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card-container3 {
   position: absolute;
@@ -89,12 +86,12 @@ canvas{
   left: 25%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 600px; /* Ajuste conforme necessário */
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
-  background: rgb(255 255 255 / 10%); /* Adiciona um fundo semitransparente */
-  border-radius: 10px; /* Borda arredondada do card */
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  background: rgb(255 255 255 / 10%);
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card-container4 {
   position: absolute;
@@ -102,12 +99,12 @@ canvas{
   left: 75%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 600px; /* Ajuste conforme necessário */
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
-  background: rgb(255 255 255 / 10%); /* Adiciona um fundo semitransparente */
-  border-radius: 10px; /* Borda arredondada do card */
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  background: rgb(255 255 255 / 10%);
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -115,16 +112,16 @@ canvas{
 }
 
 .card h2 {
-  color: #333; /* Cor do título */
+  color: #333;
 }
 
 .card p {
-  color: #555; /* Cor do texto */
+  color: #555;
 }
 
 .card button {
-  background-color: #007BFF; /* Cor do botão */
-  color: #fff; /* Cor do texto do botão */
+  background-color: #007BFF;
+  color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -136,5 +133,6 @@ canvas{
 .card-container2:hover,
 .card-container3:hover,
 .card-container4:hover {
-  pointer-events: auto; /* Ativa eventos de ponteiro apenas quando o card está em estado de hover */
+  pointer-events: auto;
 }
+
