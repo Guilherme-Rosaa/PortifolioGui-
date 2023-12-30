@@ -4,47 +4,16 @@
 
 <div style="z-index: 2;">
   <br>
-  <div style="color:white" class="container">
-    <div class="card-container1">
-
-      <h2>Quem sou:</h2>
-      <p>Meu nome é Guilherme, tenho 20 anos de idade e minha jornada no mundo do desenvolvimento de software teve
-        início em
-        2021. Desde então, tenho trilhado um caminho de aprendizado autodidata, combinando estudos independentes com
-        orientações valiosas de profissionais experientes na área.</p>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4" *ngFor="let card of cards">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">{{ card.title }}</h4>
+            <p class="card-text">{{ card.text }}</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-container2">
-
-      <h2>Como comecei:</h2>
-      <p>Minha incursão no desenvolvimento começou com uma paixão pela tecnologia e o desejo de compreender os
-        intricados
-        mecanismos por trás do software. Com uma abordagem autodidata, mergulhei em diversos recursos educacionais,
-        cursos
-        online e documentações técnicas para adquirir conhecimento sólido em programação.</p>
-
-    </div>
-    <div class="card-container3">
-
-      <h2>Experiencia:</h2>
-      <p>Profissionalmente, tenho um ano de experiência no desenvolvimento de software, trabalhando em projetos
-        desafiadores
-        que me permitiram aplicar meu conhecimento em um ambiente prático. Minha abordagem de resolução de problemas e
-        meu
-        compromisso com a qualidade me motivam a buscar soluções eficazes em todos os projetos em que me envolvo.</p>
-
-    </div>
-    <div class="card-container4">
-
-      <h2>Curiosidades:</h2>
-      <p>Fora do mundo do desenvolvimento, sou um entusiasta do aprendizado contínuo e estou sempre em busca de
-        aprimorar
-        minhas habilidades técnicas e acompanhar as últimas tendências tecnológicas. Estou ansioso para continuar
-        aperfeiçoando minha carreira no desenvolvimento de software, contribuindo para projetos significativos e
-        enfrentando
-        novos desafios.</p>
-
-    </div>
-
   </div>
 </div>
