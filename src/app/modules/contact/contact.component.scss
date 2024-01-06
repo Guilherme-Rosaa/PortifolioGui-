@@ -1,5 +1,10 @@
+.container-fluid{
+  margin-top: 1rem;
+  width: 80%;
+}
+
 button {
-  background-color: #9fa0ff;
+  background-color: #6c6ed9;
   border: none;
   box-shadow: inset;
   width: 20%;
@@ -13,16 +18,20 @@ button {
 .social-icons {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
+}
+
+button:hover{
+  background-color: #6c6ed98f;
 }
 
 @media screen and (max-width: 768px) {
-  button{
-      background-color: #9fa0ff;
-      border: none;
-      box-shadow: inset;
-      width: 100%;
-      margin-bottom: 10px;
+  button {
+    background-color: #6c6ed9;
+    border: none;
+    box-shadow: inset;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .button-container {
@@ -44,46 +53,47 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
-#linkedin{
-  color: #0077B5;
+#linkedin {
+  color: #0077b5;
 }
 
 .toast {
-  background-color: #333; /* Cor de fundo personalizada */
-  color: #fff; /* Cor do texto personalizada */
-  border-radius: 8px; /* Borda arredondada */
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
 }
 
-.card{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+.card {
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
-  color:white;
+  color: white;
+  width: 100%;
 }
 
-input{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+input {
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
-  color:white;
+  color: white;
 }
 
-textarea{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+textarea {
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
-  color:white;
+  color: white;
 }
 
- #name:focus{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+#name:focus {
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
-  color:white;
- }
- #email:focus{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  color: white;
+}
+#email:focus {
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
-  color:white;
- }
- #message:focus{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  color: white;
+}
+#message:focus {
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
-  color:white;
- }
+  color: white;
+}

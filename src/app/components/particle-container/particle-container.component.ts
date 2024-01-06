@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// Declaração para evitar erros de TypeScript
 declare var particlesJS: any;
 @Component({
   selector: 'app-particle-container',
@@ -10,14 +9,12 @@ export class ParticleContainerComponent {
 
 
   ngOnInit() {
-    // Verifique se o DOM está pronto antes de carregar o Particle.js
     document.addEventListener('DOMContentLoaded', () => {
       this.initializeParticles();
     });
   }
 
   private initializeParticles() {
-    // Certifique-se de que a função particlesJS está disponível globalmente
     if (typeof particlesJS !== 'undefined') {
       particlesJS('particles-container', {
         "particles": {

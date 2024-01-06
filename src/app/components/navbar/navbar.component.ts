@@ -15,6 +15,7 @@ export class NavbarComponent {
     this.isMenuCollapsed = !this.isMenuCollapsed;
   }
   goTo(route: string) {
+    this.isMenuCollapsed = !this.isMenuCollapsed
     this.router.navigate(['/' + route]);
   }
 }

@@ -14,6 +14,8 @@ import { ProjectComponent } from './modules/project/project.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { ParticleContainerComponent } from './components/particle-container/particle-container.component';
+import { MatIconModule } from '@angular/material/icon';
+import { AboutComponent } from './modules/about/about.component';
 
 
 
@@ -26,8 +28,9 @@ import { ParticleContainerComponent } from './components/particle-container/part
     ContactComponent,
     ProjectComponent,
     ParticleContainerComponent,
+    AboutComponent,
   ],
-  imports: [BrowserModule,AppRoutingModule,ReactiveFormsModule,BrowserAnimationsModule,NgbCollapseModule],
+  imports: [BrowserModule,AppRoutingModule,ReactiveFormsModule,BrowserAnimationsModule,NgbCollapseModule,MatIconModule],
   providers: [],
   bootstrap: [AppComponent]
 })

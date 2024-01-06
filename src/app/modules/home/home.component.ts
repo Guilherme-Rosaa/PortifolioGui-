@@ -19,10 +19,7 @@ export class HomeComponent implements OnInit {
   constructor(private renderer: Renderer2) {}
 
   ngOnInit() {
-    this.isMob = this.isMobile();
-    if (!this.isMob) {
       this.renderer.setStyle(document.body, 'overflow', 'hidden');
-    }
     document.addEventListener('DOMContentLoaded', () => {
       this.initializeParticles();
     });

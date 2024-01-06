@@ -63,3 +63,18 @@ canvas {
 .card-text {
   color: white !important;
 }
+
+p{
+  line-height: 1;
+  color: white;
+  z-index: 2;
+}
+
+.titulo{
+  font-size: 3rem;
+}
+
+.sub-titulo{
+  font-size: 2rem;
+  margin-top: 1rem;
+}

@@ -5,13 +5,21 @@ img{
 }
 
 .list-group-item list-group-item-action{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
   color: white;
 }
 
 .list-group-item-action{
-  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  backdrop-filter: blur(10px);
   background: rgb(255 255 255 / 10%);
   color: white;
+}
+
+a{
+  background-color: #6c6ed9;
+  border: none;
+}
+a:hover{
+  background-color: #6c6ed98f;
 }
